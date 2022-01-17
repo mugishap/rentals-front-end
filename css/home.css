@@ -1,0 +1,156 @@
+#navbar {
+    position: relative;
+    overflow: hidden;
+    background-color: #3d5af1;
+    height: 60px;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.links {
+    text-decoration: none;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    height: 25px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 110px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Leelawadee, monospace;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.a:hover {
+    color: #3d5af1;
+    background-color: white;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    height: 30px;
+    width: 120px;
+}
+
+li {
+    list-style-type: none;
+    font-family: Leelawadee, monospace;
+    text-decoration: none;
+    color: white;
+}
+
+.cards {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: 10px 10px;
+    width: 400px;
+    height: 480px;
+    padding: 10px;
+    content: "";
+    clear: both;
+    display: table;
+    float: left;
+}
+
+.cards:hover {
+    border-radius: 10px;
+    padding: 10px;
+    width: 410px;
+    height: 485px;
+    transition-duration: 0.5s;
+    background-color: #3d5af1;
+    color: white;
+}
+
+.cards:hover img {
+    border-radius: 10%;
+}
+
+.cards:hover .houseButtons {
+    display: block ;
+}
+
+
+.houseImages {
+    border-radius: 5px;
+    border: 10px solid #3d5af1;
+    margin-left: 10px;
+}
+
+.houseButtons {
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    cursor: pointer;
+    margin: 2px 0px;
+    display: none;
+    border: 2px solid white;
+
+}
+
+.houseButtons:hover {
+    background-color: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+    color: white;
+    font-weight: bolder;
+    height: 45px;
+    width: 210px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    border: 2px #3d5af1;
+}
+
+.houseLinks {
+    text-decoration: none;
+
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3d5af1;
+    padding-top: 0px;
+}
+
+.houseDescription {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#foot {
+    height: 300px;
+    width: 1920px;
+    clip-path: ellipse(67% 100% at 15.59% 100%);
+    background-color: #3d5af1;
+
+}
+
+#introduction {
+    float: left;
+    padding: auto;
+    margin: auto;
+    font-size: large;
+}
+
+.footHeadings {
+    display: inline;
+    padding: 10px;
+    color: white;
+    font-size: larger;
+    font-family: Leelawadee, monospace;
+    font-weight: lighter;
+    float: right;
+
+}
