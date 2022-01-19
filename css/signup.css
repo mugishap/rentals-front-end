@@ -1,13 +1,10 @@
 body {
     background-image: url(../images/pap.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.418);
 }
 
 #form {
     margin: auto;
-    border-radius: 10px;
     background-color: white;
     text-align: left;
     padding: 20px  50px;
@@ -15,7 +12,9 @@ body {
     font-family: Leelawadee, monospace;
     height: 550px;
     width: 350px;
-    margin-top: 30px;}
+    margin-top: 30px;
+box-shadow: 0px 5px 5px 2.5px black;
+}
 
 input {
     width: 300px;

@@ -23,6 +23,10 @@ body {
         display: inline-table;}
 }
 
+#navigation {
+    
+}
+
 .links {
     text-decoration: none;
     float: right;
@@ -172,6 +176,7 @@ li {
     margin-top: 0px;
     animation-name: searchBoxAnimation;
     animation-duration: 4s;
+    margin-right: 20px;
 }
 @keyframes searchBoxAnimation{
     from{background-color: #3d5af1;}
@@ -220,6 +225,7 @@ li {
     position: relative;
     animation-name: goToDivAnimation;
     animation-duration: 4s;
+    padding-left: 20px;
 }
 @keyframes goToDivAnimation{
     from{background-color: #3d5af1;}
@@ -242,42 +248,27 @@ li {
 #settings{
     font-size: medium;
     color: white;
-    margin: 12px;
+    margin: 0px;
 
 }
 #settings:hover{
     cursor: pointer;
 }
-#settings:hover{
 
-} 
-#navOnSmallScreen{
-    display: none;
-}
 
-@media screen and ( max-width: 960px){
-    .links {
-        display:none;
-    }
-    #navOnSmallScreen{
-        display: block;
-        width: 100px;
-        height: 150px;
-        font-family: Microsoft Tai Le, monospace;
-    }
-
-}
-@media screen and ( max-width: 280px){
-    .links {
-        display:none;
-    }
-    #navOnSmallScreen{
-        display: block;
-        width: 100px;
-        height: 150px;
-        font-family: Microsoft Tai Le, monospace;
-    }
 }#navbar{
     width: 100%;
 
+}
+.theme{
+    float: right;
+    display: inline;
+}
+.fas{
+    color: white;
+    margin: 10px;
+    font-size: larger;
+}
+.fas:hover{
+cursor: pointer;
 }

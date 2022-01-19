@@ -9,22 +9,25 @@
     <link type="text/css" rel="icon" href="../images/house.png">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
 </head>
 <script src="../js/home.js"></script>
 
-<body>
+<body id="bodyElement">
     <nav id="navigation">
         <div id="navbar">
-            <p id="introduction">Buy, rent, or book hotel rooms at <strong>Rentals</strong></p>
-            <div class="links" id="settings"><i class="material-icons">settings</i></div>
-<div id="navOnSmallScreen"><i class="material-icons">drop-down</i>
-div#smallScreenLinks
-</div>
-            <ol>
-                <li class="links"><a class="a" href="e-contracts.html">E-CONTRACTS</a></li>
-                <li class="links"><a class="a" href="aboutus.html">ABOUT US</a></li>
-                <li class="links"><a class="a" href="home.html">HOME</a></li>
-            </ol>
+            <p class="theme"><i id="darkMode" onclick="darkTheme()" title="Dark Mode" class="fas fa-moon"></i></p>
+            <p class="theme"><i id="lightMode" onclick="lightTheme()" title="Light Mode" class="fas fa-sun"></i></p>
+            <div id="navOnSmallScreen">
+                <div class="links" id="settings"><i class="material-icons">settings</i></div>
+                <ol>
+                    <li class="links"><a class="a" href="e-contracts.html">E-CONTRACTS</a></li>
+                    <li class="links"><a class="a" href="aboutus.html">ABOUT US</a></li>
+                    <li class="links"><a class="a" href="home.html">HOME</a></li>
+                </ol>
+                <p id="introduction">Buy, rent, or book hotel rooms at <strong>Rentals</strong></p>
+            </div>
+
         </div>
     </nav>
     <div id="search"><button id="searchButton"><a><i class="material-icons">search</i></a></button><input type="search"
