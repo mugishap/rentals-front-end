@@ -10,6 +10,17 @@ body {
     width: 100%;
     padding: 0px 0px;
     margin: 0px 0px;
+    animation-name: bodyAnimation;
+    animation-duration: 4s;
+}
+
+@keyframes bodyAnimation {
+    from {background-color: #3d5af1;}
+
+
+
+    to { transition-duration: 0.5s;
+        display: inline-table;}
 }
 
 .links {
@@ -41,8 +52,8 @@ body {
     background-color: white;
     border-radius: 5px;
     transition-duration: 0.5s;
-    height: 30px;
-    width: 120px;
+    height: 40px;
+    width: 160px;
 }
 
 li {
@@ -50,37 +61,43 @@ li {
     font-family: Leelawadee, monospace;
     text-decoration: none;
     color: white;
+    width: 160px;
+    height: 40px;
 }
 
 .cards {
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: #92a2fdaf;
     margin: 10px 10px;
     width: 400px;
-    height: 480px;
-    padding: 10px;
-    content: "";
-    clear: both;
-    display: table;
-    float: left;
+    height: 490px;
+    padding: 15px;
+    display: inline-table;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+
 }
+
 
 .cards:hover {
     border-radius: 10px;
-    padding: 10px;
-    width: 410px;
-    height: 485px;
+    transform: scale(1.1);
+    /* width: 410px;
+    height: 490px; */
     transition-duration: 0.5s;
     background-color: #3d5af1;
     color: white;
+    padding: 20px;
 }
 
 .cards:hover img {
-    border-radius: 10%;
+    border-radius: 90px / 35px;
+    border: 5px solid white;
+    transition-duration: 0.5s;
 }
 
 .cards:hover .houseButtons {
-    display: block ;
+    display: block;
 }
 
 
@@ -129,28 +146,138 @@ li {
 
 }
 
-#foot {
-    height: 300px;
-    width: 1920px;
-    clip-path: ellipse(67% 100% at 15.59% 100%);
-    background-color: #3d5af1;
-
-}
 
 #introduction {
     float: left;
     padding: auto;
-    margin: auto;
+    margin: 15px;
+    font-size: large;
+    width: 370px;
+    color: white;
+    font-size: larger;
+    font-family: microsoft Tai le, monospace;
+}
+
+#caption {
+    font-size: 40px;
+    color: #3d5af1;
+    font-weight: bold;
+    text-align: center;
+    font-family: Microsoft Tai Le, monospace;
+}
+
+#searchBox {
+    display: inline;
+    height: 30px;
+    margin-top: 0px;
+    animation-name: searchBoxAnimation;
+    animation-duration: 4s;
+}
+@keyframes searchBoxAnimation{
+    from{background-color: #3d5af1;}
+    to{background-color: white;}
+}
+
+#search {
+    display: inline;
+    float: right;
+}
+
+#searchButton {
+    /* border-radius: 5px; */
+    margin-top: 10px;
+    border-bottom: 3px solid #3d5af1;
+    border-left: 3px solid #3d5af1;
+    border-top: 3px solid #3d5af1;
+    padding-top: 5px;
+}
+
+
+.changePageLinks {
+    text-decoration: #3d5af1;
+}
+
+#navigatorToPage {
+    height: 40px;
+    width: 300px;
+    font-family: lelawadee, monospace;
+    float: left;
+    display: none;
     font-size: large;
 }
 
-.footHeadings {
-    display: inline;
-    padding: 10px;
-    color: white;
+#goToDiv {
+    font-family: lelawadee, monospace;
+    font-weight: bold;
     font-size: larger;
-    font-family: Leelawadee, monospace;
-    font-weight: lighter;
-    float: right;
+    color: #3d5af1;
+    margin-top: 10px;
+    background-color: white;
+    border: 3px solid #3d5af1;
+    width: 300px;
+    border-radius: 5px;
+    height: 30px;
+    position: relative;
+    animation-name: goToDivAnimation;
+    animation-duration: 4s;
+}
+@keyframes goToDivAnimation{
+    from{background-color: #3d5af1;}
+    to{background-color: white;}
+}
+
+#div:hover {
+    background-color: #3d5af1;
+    color: white;
+    font-weight: bold;
+    font-family: lelawadee, monospace;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+}
+
+#div:hover #navigatorToPage {
+    display: block;
+}
+#settings{
+    font-size: medium;
+    color: white;
+    margin: 12px;
+
+}
+#settings:hover{
+    cursor: pointer;
+}
+#settings:hover{
+
+} 
+#navOnSmallScreen{
+    display: none;
+}
+
+@media screen and ( max-width: 960px){
+    .links {
+        display:none;
+    }
+    #navOnSmallScreen{
+        display: block;
+        width: 100px;
+        height: 150px;
+        font-family: Microsoft Tai Le, monospace;
+    }
+
+}
+@media screen and ( max-width: 280px){
+    .links {
+        display:none;
+    }
+    #navOnSmallScreen{
+        display: block;
+        width: 100px;
+        height: 150px;
+        font-family: Microsoft Tai Le, monospace;
+    }
+}#navbar{
+    width: 100%;
 
 }
