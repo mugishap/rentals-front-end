@@ -15,16 +15,16 @@ body {
 }
 
 @keyframes bodyAnimation {
-    from {background-color: #3d5af1;}
+    from {
+        background-color: #3d5af1;
+    }
 
 
 
-    to { transition-duration: 0.5s;
-        display: inline-table;}
-}
-
-#navigation {
-    
+    to {
+        transition-duration: 0.5s;
+        display: inline-table;
+    }
 }
 
 .links {
@@ -178,9 +178,15 @@ li {
     animation-duration: 4s;
     margin-right: 20px;
 }
-@keyframes searchBoxAnimation{
-    from{background-color: #3d5af1;}
-    to{background-color: white;}
+
+@keyframes searchBoxAnimation {
+    from {
+        background-color: #3d5af1;
+    }
+
+    to {
+        background-color: white;
+    }
 }
 
 #search {
@@ -199,16 +205,16 @@ li {
 
 
 .changePageLinks {
-    text-decoration: #3d5af1;
+    text-decoration: none;
+    color: #3d5af1;
 }
-
-#navigatorToPage {
-    height: 40px;
+.changePageLinks:hover{
+    background-color: #3d5af1;
+    color: white;
+    border-radius: 5px;
+}
+.changePageListItems{
     width: 300px;
-    font-family: lelawadee, monospace;
-    float: left;
-    display: none;
-    font-size: large;
 }
 
 #goToDiv {
@@ -227,48 +233,63 @@ li {
     animation-duration: 4s;
     padding-left: 20px;
 }
-@keyframes goToDivAnimation{
-    from{background-color: #3d5af1;}
-    to{background-color: white;}
-}
 
-#div:hover {
+@keyframes goToDivAnimation {
+    from {
+        background-color: #3d5af1;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+#goToDiv:hover{
     background-color: #3d5af1;
     color: white;
-    font-weight: bold;
-    font-family: lelawadee, monospace;
     cursor: pointer;
-    width: 300px;
-    height: 30px;
+    transition-duration: 0.3s;
 }
-
-#div:hover #navigatorToPage {
+#navigatorToPage{
+/* padding: 5px; */
+/* height: 200px; */
+color: #3d5af1;
+    display: none;
+    border: 2px solid #3d5af1;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#goToDiv:hover #navigatorToPage{
     display: block;
 }
-#settings{
+
+#settings {
     font-size: medium;
     color: white;
     margin: 0px;
 
 }
-#settings:hover{
+
+#settings:hover {
     cursor: pointer;
 }
 
-
-}#navbar{
+#navbar {
     width: 100%;
 
 }
-.theme{
+
+.theme {
     float: right;
     display: inline;
 }
-.fas{
+
+.fas {
     color: white;
     margin: 10px;
     font-size: larger;
 }
-.fas:hover{
-cursor: pointer;
+
+.fas:hover {
+    cursor: pointer;
 }
