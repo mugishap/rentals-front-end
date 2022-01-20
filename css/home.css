@@ -104,6 +104,7 @@ li {
 .cards:hover .houseButtons {
     display: flex;
     align-items: center;
+
 }
 
 
@@ -122,8 +123,8 @@ li {
     cursor: pointer;
     margin: 2px 0px;
     display: none;
-    border: 2px solid white;
-
+    border: 2px solid #3d5af1;
+    outline: 2px solid white;
 }
 
 .houseButtons:hover {
