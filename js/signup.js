@@ -1,7 +1,9 @@
-function confpass(){
+function confpass(e){
+e.preventDefault()
     let confirmation = document.querySelector("#submit-btn")
-    let pass1 = (document.querySelector("#password-input"))
-    let pass2 = (document.querySelector("#confirm-input"))
+    let pass1 = (document.querySelector("#password-input").value)
+    let pass2 = (document.querySelector("#confirm-input").value)
+    console.log(pass1, pass2)
     
     confirmation.addEventListener("click", () => {
         if (pass1 != pass2){

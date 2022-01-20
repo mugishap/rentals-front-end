@@ -84,6 +84,7 @@ li {
 
 
 .cards:hover {
+    display: inline-flexbox;
     border-radius: 10px;
     transform: scale(1.1);
     /* width: 410px;
@@ -101,7 +102,8 @@ li {
 }
 
 .cards:hover .houseButtons {
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -190,13 +192,15 @@ li {
 }
 
 #search {
-    display: inline;
+    display: flex;
     float: right;
+    align-items: center;
+    margin-top: 10px;
 }
 
 #searchButton {
     /* border-radius: 5px; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-bottom: 3px solid #3d5af1;
     border-left: 3px solid #3d5af1;
     border-top: 3px solid #3d5af1;
