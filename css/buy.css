@@ -14,8 +14,10 @@
     --secondary-color: black;
 }
 #modeChanger{
-    transform: translateY(-120px);
-    width: 20px;
+width: 20px;
+float: right;
+margin: 10px;
+cursor: pointer;
 }
 body {
     width: 100%;
@@ -100,11 +102,10 @@ li {
     transform: scale(1.01);
     /* width: 410px;
     height: 490px; */
-    transition-duration: 0.1s;
+    transition: 0.1s ease-in-out;
     background-color: var(--primarycolor);
     color: var(--secondary-color);
     padding: 20px;
-
 }
 
 .cards:hover img {
@@ -289,11 +290,6 @@ color: var(--primarycolor);
 
 #settings:hover {
     cursor: pointer;
-}
-
-#navbar {
-    width: 100%;
-
 }
 
 .theme {

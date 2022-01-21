@@ -5,6 +5,7 @@ document.body.style.backgroundColor = "white"
 function darkTheme(){
     document.body.style.background = "black"
     document.querySelector("#navbar").style.background = "darkblue"
+    document.querySelector("#searchBox").style.background = "barkblue"
 
     }
     
@@ -21,8 +22,8 @@ window.addEventListener('scroll', fixNav)
 var icon = document.getElementById("modeChanger");
 
 icon.onclick = function darkMode() {
-    document.body.classList.toggle("darkTheme");
-    if(document.body.contains("darkTheme")){
+    document.body.classList.toggle(darkTheme());
+    if(document.body.contains(darkTheme())){
         icon.src="../images/icons/sun.png";
     }
     else{
