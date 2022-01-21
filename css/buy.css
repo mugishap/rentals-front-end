@@ -88,22 +88,23 @@ li {
     height: 490px;
     padding: 15px;
     display: inline-flexbox;
-    -webkit-transition: 0.2s;
     transition: 0.2s;
-
+    transition: 0.2s;
 }
 
 
 .cards:hover {
+    /* added the scale element */
     display: inline-flexbox;
     border-radius: 10px;
-    transform: scale(1.1);
+    transform: scale(1.01);
     /* width: 410px;
     height: 490px; */
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
     background-color: var(--primarycolor);
     color: var(--secondary-color);
     padding: 20px;
+
 }
 
 .cards:hover img {
@@ -170,7 +171,7 @@ li {
     padding: auto;
     margin: 15px;
     font-size: large;
-    width: 370px;
+    width: 400px;
     color: var(--secondary-color);
     font-size: larger;
     font-family: microsoft Tai le, monospace;
