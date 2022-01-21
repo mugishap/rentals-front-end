@@ -1,11 +1,22 @@
 #navbar {
     position: relative;
     overflow: hidden;
-    background-color: #3d5af1;
+    background-color: var(--primarycolor);
     height: 60px;
     width: 100%;
 }
-
+:root{
+    --primarycolor: #3d5af1;
+    --secondary-color: #fff;
+}
+.darkTheme{
+    --primarycolor: rgba(2, 2, 102, 0.884);
+    --secondary-color: black;
+}
+#modeChanger{
+    transform: translateY(-120px);
+    width: 20px;
+}
 body {
     width: 100%;
     padding: 0px 0px;
@@ -16,7 +27,7 @@ body {
 
 @keyframes bodyAnimation {
     from {
-        background-color: #3d5af1;
+        background-color: var(--primarycolor);
     }
 
 
@@ -38,22 +49,22 @@ body {
     margin-right: 10px;
     width: 110px;
     margin-bottom: 10px;
-    color: white;
+    color: var(--secondary-color);
     font-family: Leelawadee, monospace;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-}
+    }
 
 .a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     font-weight: bolder;
 }
 
 .a:hover {
-    color: #3d5af1;
-    background-color: white;
+    color: var(--primarycolor);
+    background-color: var(--secondary-color);
     border-radius: 5px;
     transition-duration: 0.5s;
     height: 40px;
@@ -64,7 +75,7 @@ li {
     list-style-type: none;
     font-family: Leelawadee, monospace;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     width: 160px;
     height: 40px;
 }
@@ -76,7 +87,7 @@ li {
     width: 400px;
     height: 490px;
     padding: 15px;
-    display: inline-table;
+    display: inline-flexbox;
     -webkit-transition: 0.2s;
     transition: 0.2s;
 
@@ -90,14 +101,14 @@ li {
     /* width: 410px;
     height: 490px; */
     transition-duration: 0.5s;
-    background-color: #3d5af1;
-    color: white;
+    background-color: var(--primarycolor);
+    color: var(--secondary-color);
     padding: 20px;
 }
 
 .cards:hover img {
     border-radius: 90px / 35px;
-    border: 5px solid white;
+    border: 5px solid var(--secondary-color);
     transition-duration: 0.5s;
 }
 
@@ -110,12 +121,12 @@ li {
 
 .houseImages {
     border-radius: 5px;
-    border: 10px solid #3d5af1;
+    border: 10px solid var(--primarycolor);
     margin-left: 10px;
 }
 
 .houseButtons {
-    background-color: white;
+    background-color: var(--secondary-color);
     width: 200px;
     height: 40px;
     border-radius: 5px;
@@ -123,19 +134,19 @@ li {
     cursor: pointer;
     margin: 2px 0px;
     display: none;
-    border: 2px solid #3d5af1;
-    outline: 2px solid white;
+    border: 2px solid var(--primarycolor);
+    outline: 2px solid var(--secondary-color);
 }
 
 .houseButtons:hover {
     background-color: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
-    color: white;
+    color: var(--secondary-color);
     font-weight: bolder;
     height: 45px;
     width: 210px;
     border-radius: 5px;
     transition-duration: 0.5s;
-    border: 2px #3d5af1;
+    border: 2px var(--primarycolor);
 }
 
 .houseLinks {
@@ -143,7 +154,7 @@ li {
 
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #3d5af1;
+    color: var(--primarycolor);
     padding-top: 0px;
 }
 
@@ -160,14 +171,14 @@ li {
     margin: 15px;
     font-size: large;
     width: 370px;
-    color: white;
+    color: var(--secondary-color);
     font-size: larger;
     font-family: microsoft Tai le, monospace;
 }
 
 #caption {
     font-size: 40px;
-    color: #3d5af1;
+    color: var(--primarycolor);
     font-weight: bold;
     text-align: center;
     font-family: Microsoft Tai Le, monospace;
@@ -184,11 +195,11 @@ li {
 
 @keyframes searchBoxAnimation {
     from {
-        background-color: #3d5af1;
+        background-color: var(--primarycolor);
     }
 
     to {
-        background-color: white;
+        background-color: var(--secondary-color);
     }
 }
 
@@ -202,20 +213,20 @@ li {
 #searchButton {
     /* border-radius: 5px; */
     /* margin-top: 10px; */
-    border-bottom: 3px solid #3d5af1;
-    border-left: 3px solid #3d5af1;
-    border-top: 3px solid #3d5af1;
+    border-bottom: 3px solid var(--primarycolor);
+    border-left: 3px solid var(--primarycolor);
+    border-top: 3px solid var(--primarycolor);
     padding-top: 5px;
 }
 
 
 .changePageLinks {
     text-decoration: none;
-    color: #3d5af1;
+    color: var(--primarycolor);
 }
 .changePageLinks:hover{
-    background-color: #3d5af1;
-    color: white;
+    background-color: var(--primarycolor);
+    color: var(--secondary-color);
     border-radius: 5px;
 }
 .changePageListItems{
@@ -226,10 +237,10 @@ li {
     font-family: lelawadee, monospace;
     font-weight: bold;
     font-size: larger;
-    color: #3d5af1;
+    color: var(--primarycolor);
     margin-top: 10px;
-    background-color: white;
-    border: 3px solid #3d5af1;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--primarycolor);
     width: 300px;
     border-radius: 5px;
     height: 30px;
@@ -241,26 +252,26 @@ li {
 
 @keyframes goToDivAnimation {
     from {
-        background-color: #3d5af1;
+        background-color: var(--primarycolor);
     }
 
     to {
-        background-color: white;
+        background-color: var(--secondary-color);
     }
 }
 #goToDiv:hover{
-    background-color: #3d5af1;
-    color: white;
+    background-color: var(--primarycolor);
+    color: var(--secondary-color);
     cursor: pointer;
     transition-duration: 0.3s;
 }
 #navigatorToPage{
 /* padding: 5px; */
 /* height: 200px; */
-color: #3d5af1;
+color: var(--primarycolor);
     display: none;
-    border: 2px solid #3d5af1;
-    background-color: white;
+    border: 2px solid var(--primarycolor);
+    background-color: var(--secondary-color);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -270,7 +281,7 @@ color: #3d5af1;
 
 #settings {
     font-size: medium;
-    color: white;
+    color: var(--secondary-color);
     margin: 0px;
 
 }
@@ -290,11 +301,25 @@ color: #3d5af1;
 }
 
 .fas {
-    color: white;
+    color: var(--secondary-color);
     margin: 10px;
     font-size: larger;
 }
+#footer{
+    height: 400px;
+    clip-path: ellipse( 88% 100% at 84% 100%);
+    background-color: var(--primarycolor);
+    color: black;
+    align-items: center;
+    width: 100%;
+}
 
-.fas:hover {
-    cursor: pointer;
+#primaryDiv{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.cards:hover #primaryDiv{
+position: fixed;
 }
