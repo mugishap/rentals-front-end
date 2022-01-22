@@ -6,7 +6,9 @@ body {
     animation-duration: 4s;
 }
 
-
+nav{
+    display: flex;
+}
 #navbar {
     position: relative;
     overflow: hidden;
@@ -14,15 +16,6 @@ body {
     height: 60px;
     width: 100%;
     padding: 0;
-}
-
-ul {
-    display: flex;
-    float: right;
-    padding: -10px 5px;
-
-    margin-bottom: 10px;
-
 }
 
 :root {
@@ -43,9 +36,7 @@ ul {
     cursor: pointer;
 }
 
-.importantClicks{
-    cursor: pointer;
-}
+
 @keyframes bodyAnimation {
     from {
         background-color: var(--primarycolor);
@@ -90,17 +81,18 @@ ul {
 li {
     list-style-type: none;
     font-family: Leelawadee, monospace;
-    text-decoration: none;
     color: var(--secondary-color);
     text-align: center;
-
+    display:inline-flexbox;
 }
-/* .importantClicks{
-
+ .importantClicks{
+float:right;
+color: var(--secondary-color);  
+display: inline;
+cursor: pointer;
+align-items: stretch;
 }
-.importantClicks:hover {
-    background-color: none;
-} */
+    
 .cards {
     border-radius: 10px;
     background-color: #92a2fdaf;
@@ -109,7 +101,7 @@ li {
     height: 490px;
     padding: 15px;
 
-    /* display: inline-flexbox; */
+     display: inline-flexbox;
 }
 
 .cards:first-child {
@@ -195,7 +187,7 @@ li {
     padding: auto;
     margin: 15px;
     font-size: large;
-    width: 400px;
+    width: 600px;
     color: var(--secondary-color);
     font-size: larger;
     font-family: var(--font-family);
@@ -305,22 +297,6 @@ li {
 
 #goToDiv:hover #navigatorToPage {
     display: block;
-}
-
-#settings {
-    font-size: medium;
-    color: var(--secondary-color);
-    margin: 0px;
-
-}
-
-#settings:hover {
-    cursor: pointer;
-}
-
-.theme {
-    float: right;
-    display: inline;
 }
 
 .fas {
