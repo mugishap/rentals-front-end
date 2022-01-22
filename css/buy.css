@@ -1,24 +1,3 @@
-#navbar {
-    position: relative;
-    overflow: hidden;
-    background-color: var(--primarycolor);
-    height: 60px;
-    width: 100%;
-}
-:root{
-    --primarycolor: #3d5af1;
-    --secondary-color: #fff;
-}
-.darkTheme{
-    --primarycolor: rgba(2, 2, 102, 0.884);
-    --secondary-color: black;
-}
-#modeChanger{
-width: 20px;
-float: right;
-margin: 10px;
-cursor: pointer;
-}
 body {
     width: 100%;
     padding: 0px 0px;
@@ -27,12 +6,50 @@ body {
     animation-duration: 4s;
 }
 
+
+#navbar {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primarycolor);
+    height: 60px;
+    width: 100%;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    float: right;
+    padding: -10px 5px;
+
+    margin-bottom: 10px;
+
+}
+
+:root {
+    --primarycolor: #3d5af1;
+    --secondary-color: #fff;
+    --font-family: Microsoft Tai Le, monospace;
+}
+
+.darkTheme {
+    --primarycolor: rgba(2, 2, 102, 0.884);
+    --secondary-color: black;
+}
+
+#modeChanger {
+    width: 20px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.importantClicks{
+    cursor: pointer;
+}
 @keyframes bodyAnimation {
     from {
         background-color: var(--primarycolor);
     }
-
-
 
     to {
         transition-duration: 0.5s;
@@ -45,7 +62,7 @@ body {
     float: right;
     padding: 5px;
     margin: 5px;
-    height: 25px;
+    height: 45px;
     margin-top: 0px;
     margin-left: 10px;
     margin-right: 10px;
@@ -56,21 +73,18 @@ body {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-    }
-
-.a {
-    text-decoration: none;
-    color: var(--secondary-color);
     font-weight: bolder;
+    height: 10px;
+    width: 120px;
+
 }
 
-.a:hover {
+.links:hover {
     color: var(--primarycolor);
     background-color: var(--secondary-color);
     border-radius: 5px;
     transition-duration: 0.5s;
-    height: 40px;
-    width: 160px;
+    height: 30px;
 }
 
 li {
@@ -78,10 +92,15 @@ li {
     font-family: Leelawadee, monospace;
     text-decoration: none;
     color: var(--secondary-color);
-    width: 160px;
-    height: 40px;
-}
+    text-align: center;
 
+}
+/* .importantClicks{
+
+}
+.importantClicks:hover {
+    background-color: none;
+} */
 .cards {
     border-radius: 10px;
     background-color: #92a2fdaf;
@@ -89,10 +108,11 @@ li {
     width: 400px;
     height: 490px;
     padding: 15px;
-   
+
     /* display: inline-flexbox; */
 }
-.cards:first-child{
+
+.cards:first-child {
     margin-top: 0;
 }
 
@@ -107,7 +127,7 @@ li {
     background-color: var(--primarycolor);
     color: var(--secondary-color);
     padding: 20px;
-    box-shadow: 0px 1px 2px 2px  var(--primarycolor);
+    box-shadow: 0px 1px 2px 2px var(--primarycolor);
 
 }
 
@@ -178,7 +198,7 @@ li {
     width: 400px;
     color: var(--secondary-color);
     font-size: larger;
-    font-family: microsoft Tai le, monospace;
+    font-family: var(--font-family);
 }
 
 #caption {
@@ -186,7 +206,7 @@ li {
     color: var(--primarycolor);
     font-weight: bold;
     text-align: center;
-    font-family: Microsoft Tai Le, monospace;
+    font-family: var(--font-family);
 }
 
 #searchBox {
@@ -227,12 +247,14 @@ li {
     text-decoration: none;
     color: var(--primarycolor);
 }
-.changePageLinks:hover{
+
+.changePageLinks:hover {
     background-color: var(--primarycolor);
     color: var(--secondary-color);
     border-radius: 5px;
 }
-.changePageListItems{
+
+.changePageListItems {
     width: 300px;
 }
 
@@ -262,23 +284,26 @@ li {
         background-color: var(--secondary-color);
     }
 }
-#goToDiv:hover{
+
+#goToDiv:hover {
     background-color: var(--primarycolor);
     color: var(--secondary-color);
     cursor: pointer;
     transition-duration: 0.3s;
 }
-#navigatorToPage{
-/* padding: 5px; */
-/* height: 200px; */
-color: var(--primarycolor);
+
+#navigatorToPage {
+    /* padding: 5px; */
+    /* height: 200px; */
+    color: var(--primarycolor);
     display: none;
     border: 2px solid var(--primarycolor);
     background-color: var(--secondary-color);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-#goToDiv:hover #navigatorToPage{
+
+#goToDiv:hover #navigatorToPage {
     display: block;
 }
 
@@ -303,20 +328,22 @@ color: var(--primarycolor);
     margin: 10px;
     font-size: larger;
 }
-#footer{
+
+#footer {
     height: 400px;
-    clip-path: ellipse( 88% 100% at 84% 100%);
+    clip-path: ellipse(88% 100% at 84% 100%);
     background-color: var(--primarycolor);
     color: black;
     align-items: center;
     width: 100%;
 }
 
-#primaryDiv{
+#primaryDiv {
 
     /* display: inline-flexbox; */
     /* grid-template-columns: 1fr 1fr 1fr; */
     column-count: 3;
     column-gap: 0px;
+    width: 100%;
 
 }
