@@ -13,6 +13,7 @@ function darkTheme(){
         document.body.style.backgroundColor = "white"
         document.querySelector("#navbar").style.background = "#3d5af1"
     }
+    document.querySelector("#time").innerHTML = Date()
     
 // const nav = document.querySelector('#navbar')
 // window.addEventListener('scroll', fixNav)
