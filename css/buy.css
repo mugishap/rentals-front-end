@@ -359,7 +359,6 @@ padding: 100px 5px;
 transform: scale(0.8);
 }
 /* 
-
 .cards:hover {
     /* added the scale element */
     /* border-radius: 10px;
@@ -457,5 +456,3 @@ transform: scale(0.6);
     column-count: 2;
 }
 }
-
-
