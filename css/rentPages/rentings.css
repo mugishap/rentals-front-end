@@ -1,0 +1,27 @@
+.card{
+    background-color: #3d5af1;
+    border-radius: 10px;
+    width: 35%;
+    height: 700px;
+    display: inline-flex;
+padding: 10px 15px;
+}
+img{
+margin: 20px 20px;
+border-radius: 90px / 35px;
+border: 5px solid #3d5af1;
+outline: 5px solid #fff;
+}
+.changePic{
+width: 180px;
+height: 40px;
+background-color: white;
+border: 5px;
+margin: 10px 50px;
+cursor: pointer;
+border-radius: 5px;
+color: #3d5af1;
+font-size: large;
+font-family: Microsoft Tai Le, monospace;
+font-weight: bold;
+}
