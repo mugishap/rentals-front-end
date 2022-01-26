@@ -4,6 +4,7 @@ body {
     margin: 0px 0px;
     animation-name: bodyAnimation;
     animation-duration: 4s;
+    display: inline-block;
 }
 
 nav{
