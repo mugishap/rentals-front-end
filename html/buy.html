@@ -13,10 +13,11 @@
 </head>
 <script src="../js/buy.js"></script>
 
-<body>
+<body onload="displayTime()">
     <nav id="navigation">
         <div id="navbar">
-            <p id="introduction">Buy, rent, or book hotel rooms at <strong>Real Estate Holdings</strong></p>
+            <p class="introduction">Buy, rent, or book hotel rooms at <strong>Real Estate Holdings</strong></p>
+            <span class='introduction' id="time"></span>
             <ul>
                 <li><a class="links" href="home.html">HOME</a></li>
                 <li><a class="links" href="e-contracts.html">E-CONTRACTS</a></li>
@@ -50,6 +51,9 @@
     </div>
 
     <p id="caption">House dealership</p>
+    <div id="advert" onload="advertisement">
+        <img src="../images/ad.jpg" alt="advertisement" width="560px" height="720px" id="image">
+    </div>
     <div id="primaryDiv">
         <div class="cards">
             <img class="houseImages" src="../images/buy/house1.jpg" alt="house image" width="360px" height="240px">
