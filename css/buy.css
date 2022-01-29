@@ -5,6 +5,7 @@ body {
     animation-name: bodyAnimation;
     animation-duration: 4s;
     display: inline-block;
+    overflow-x: hidden;
 }
 
 nav {
@@ -202,7 +203,8 @@ li {
     border-radius: 5px;
     box-shadow: 10px 5px 13px 1px #000;
 transform: translate(520px, 100px);
-display:none;}
+display:none;
+}
 
 .introduction {
     float: left;
@@ -290,7 +292,6 @@ display:none;}
     width: 20%;
     border-radius: 5px;
     height: 30px;
-    /* position: relative; */
     animation-name: goToDivAnimation;
     animation-duration: 4s;
     padding-left: 20px;
@@ -345,13 +346,15 @@ display:none;}
 
 #primaryDiv {
 
-    /* display: inline-flexbox; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
+   
+    
     column-count: 3;
     column-gap: 0px;
     width: 100%;
     padding: 100px 5px;
-
+    /* display: grid; */
+     /* display: inline-flexbox; */
+    /* grid-template-columns:1fr 1fr 1fr; */
 }
 
 @media screen and (max-width: 1343px) {
@@ -368,7 +371,7 @@ display:none;}
         border-radius: 5px;
         height: 30px;
         position: relative;
-        animation-name: goToDivAnimation;
+
         animation-duration: 4s;
         padding-left: 20px;
     }
@@ -470,7 +473,7 @@ display:none;}
     }
 
     .cards {
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
 
     #primaryDiv {
