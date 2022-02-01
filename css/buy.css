@@ -65,14 +65,12 @@ i {
 }
 
 .links {
+
     text-decoration: none;
     float: right;
     padding: 5px;
-    margin: 5px;
+    margin: 0px 10px 10px 10px;
     height: 45px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
     width: 110px;
     margin-bottom: 10px;
     color: var(--secondary-color);
@@ -99,7 +97,7 @@ li {
     font-family: Leelawadee, monospace;
     color: var(--secondary-color);
     text-align: center;
-    display: inline-flexbox;
+    display: inline;
 }
 
 .importantClicks {
@@ -122,7 +120,7 @@ li {
 }
 
 .cards:first-child {
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 
@@ -137,6 +135,7 @@ li {
     color: var(--secondary-color);
     padding: 20px;
     box-shadow: 0px 1px 2px 2px var(--primarycolor);
+    z-index: -16;
 
 }
 
@@ -255,7 +254,7 @@ display:none;
     display: flex;
     float: right;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 #searchButton {
@@ -264,6 +263,7 @@ display:none;
     border-top: 3px solid var(--primarycolor);
     padding-top: 5px;
 }
+
 
 
 .changePageLinks {
@@ -295,6 +295,10 @@ display:none;
     animation-name: goToDivAnimation;
     animation-duration: 4s;
     padding-left: 20px;
+margin-top: 100px;
+display: flex;
+justify-content: center;
+flex-direction: wrap;
 }
 
 @keyframes goToDivAnimation {
@@ -308,25 +312,29 @@ display:none;
 }
 
 #goToDiv:hover {
-    background-color: var(--primarycolor);
-    color: var(--secondary-color);
     cursor: pointer;
     transition-duration: 0.3s;
+    display: flex;
+    justify-content: space-around;
 }
 
 #navigatorToPage {
-    /* padding: 5px; */
-    /* height: 200px; */
+    padding: 5px; 
+     height: 120px;
     color: var(--primarycolor);
-    display: none;
+    visibility: hidden;
+    display: flex;
     border: 2px solid var(--primarycolor);
     background-color: var(--secondary-color);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-
 #goToDiv:hover #navigatorToPage {
-    display: block;
+    visibility: visible;
+    display: flex;
+justify-content: center;
+flex-direction: wrap;
+transition-duration: 0.6s;
 }
 
 .fas {
@@ -337,8 +345,8 @@ display:none;
 
 #footer {
     height: 400px;
-    clip-path: ellipse(88% 100% at 84% 100%);
-    background-color: var(--primarycolor);
+    /* clip-path: ellipse(88% 100% at 84% 100%);
+    background-color: var(--primarycolor); */
     color: black;
     align-items: center;
     width: 100%;
@@ -395,10 +403,11 @@ display:none;
 
 }
 
-*/ .cards:hover img {
+ .cards:hover img {
     border-radius: 90px / 35px;
     border: 5px solid var(--secondary-color);
     transition-duration: 0.5s;
+    z-index: -15;
 }
 
 .cards:hover .houseButtons {
@@ -412,6 +421,7 @@ display:none;
     border-radius: 5px;
     border: 10px solid var(--primarycolor);
     margin-left: 10px;
+    z-index: -11;
 }
 
 .houseButtons {
@@ -440,11 +450,11 @@ display:none;
 
 .houseLinks {
     text-decoration: none;
-
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--primarycolor);
     padding-top: 0px;
+    font-weight: bold;
 }
 
 .houseDescription {
@@ -479,4 +489,10 @@ display:none;
     #primaryDiv {
         column-count: 2;
     }
+}
+.lowerHolder{
+    color: black;
+    height: 300px;
+    display: block;
+    margin: 0px;
 }

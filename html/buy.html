@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="../css/buy.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <script src="../js/buy.js"></script>
 
-<body  onload="displayTime()" >
+<body onload="displayTime()">
     <nav id="navigation">
         <div id="navbar">
             <p class="introduction">Buy or rent houses at <strong>Real Estate Holdings</strong></p>
@@ -22,18 +24,25 @@
                 <li><a class="links" href="home.html">HOME</a></li>
                 <li><a class="links" href="e-contracts.html">E-CONTRACTS</a></li>
                 <li><a class="links" href="aboutus.html">ABOUT US</a></li>
-            <li><p class=".links importantClicks" id="settings"><i class="material-icons">settings</i></p></li>
-            <li><p class=".links importantClicks" id="darkTheme" onclick="darkTheme()"><i
-                    class="material-icons">dark_mode</i></p></li>
-            <li><p class=".links importantClicks" id="lightTheme" onclick="lightTheme()"><i
-                    class="material-icons">light_mode</i></p></li>
-            <p id="smallMenuBar"><i class="material-icons">menu</i></p></li>
-        </ul>
+                <li>
+                    <p class=".links importantClicks" id="settings"><i class="material-icons">settings</i></p>
+                </li>
+                <li>
+                    <p class=".links importantClicks" id="darkTheme" onclick="darkTheme()"><i
+                            class="material-icons">dark_mode</i></p>
+                </li>
+                <li>
+                    <p class=".links importantClicks" id="lightTheme" onclick="lightTheme()"><i
+                            class="material-icons">light_mode</i></p>
+                </li>
+                <p id="smallMenuBar"><i class="material-icons">menu</i></p>
+                </li>
+            </ul>
         </div>
     </nav>
     <div id="search"><button id="searchButton"><a><i class="material-icons">search</i></a></button><input type="search"
             name="search" id="searchBox" placeholder="Search place.."></div>
-    <div id="goToDiv">Go to..
+    <div id="goToDiv">Go to...
         <div id="navigatorToPage">
             <ol>
                 <li class="changePageListItems" value="renting"><a class="changePageLinks" href="renting.html">Rent a
@@ -62,8 +71,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house1.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house1.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -73,7 +82,7 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house2.html">VIEW <i
+                <a class="houseLinks" href="buyingPages/house2.html"><button title="View the house" class="houseButtons">VIEW <i
                             class="material-icons">forward</i></a></button>
             </div>
         </div>
@@ -84,8 +93,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house3.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house3.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -95,8 +104,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house4.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house4.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <p id="time" on></p>
@@ -107,8 +116,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house5.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house5.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -118,8 +127,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house6.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house6.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -129,8 +138,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house7.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house7.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -140,8 +149,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house8.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house8.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -151,8 +160,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house9.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house9.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -162,8 +171,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house10.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house10.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -173,8 +182,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house11.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house11.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -184,8 +193,8 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house12.html">VIEW
-                        <i class="material-icons">forward</i></a></button>
+                <a class="houseLinks" href="buyingPages/house12.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
             </div>
         </div>
         <div class="cards">
@@ -195,7 +204,7 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house13.html">VIEW <i
+                <a class="houseLinks" href="buyingPages/house13.html"><button title="View the house" class="houseButtons">VIEW <i
                             class="material-icons">forward</i></a></button>
             </div>
         </div>
@@ -206,7 +215,7 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house14.html">VIEW <i
+                <a class="houseLinks" href="buyingPages/house14.html"><button title="View the house" class="houseButtons">VIEW <i
                             class="material-icons">forward</i></a></button>
             </div>
         </div>
@@ -217,7 +226,7 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house15.html">VIEW <i
+                <a class="houseLinks" href="buyingPages/house15.html"><button title="View the house" class="houseButtons">VIEW <i
                             class="material-icons">forward</i></a></button>
             </div>
         </div>
@@ -228,7 +237,7 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house16.html">VIEW <i
+                <a class="houseLinks" href="buyingPages/house16.html"><button title="View the house" class="houseButtons">VIEW <i
                             class="material-icons">forward</i></a></button>
             </div>
         </div>
@@ -239,7 +248,7 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house17.html">VIEW <i
+                <a class="houseLinks" href="buyingPages/house17.html"><button title="View the house" class="houseButtons">VIEW <i
                             class="material-icons">forward</i></a></button>
             </div>
         </div>
@@ -250,13 +259,38 @@
                 <p class="houseDescription">Tel: +250 782 307 144</p>
                 <p class="houseDescription">Price: $20M</p>
                 <p class="houseDescription">Location: KK 105 St</p>
-                <button title="" class="houseButtons"><a class="houseLinks" href="buyingPages/house18.html">VIEW <i
+                <a class="houseLinks" href="buyingPages/house18.html"><button title="View the house" class="houseButtons">VIEW <i
                             class="material-icons">forward</i></a></button>
             </div>
         </div>
     </div>
     <div id="footer">
-
+        <div class="lowerHolder">
+            <p class="contact">Contact the Developer</p>
+            <span class="linkHolder">
+                <span class="smlinks" type='LinkedIn'><a href='#'>
+                        <ion-icon name="logo-linkedin" style="font-size: 60px;"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Facebook'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-facebook"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Instagram'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-instagram"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Twitter'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-twitter"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Email'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="mail-outline"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Github'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-github"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Google Account'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-google"></ion-icon>
+                    </a></span>
+            </span>
+        </div>
         <p>Powered by Precieux Programming</p>
     </div>
 </body>
