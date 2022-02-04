@@ -20,7 +20,7 @@
             <p class="introduction">Buy or rent houses at <strong>Real Estate Holdings</strong></p>
             <span class='introduction' id="time"></span>
             <ul>
-                <li><a class="links" href="home.html">HOME</a></li>
+                <li><a class="links" href="../renting.html">HOME</a></li>
                 <li><a class="links" href="e-contracts.html">E-CONTRACTS</a></li>
                 <li><a class="links" href="aboutus.html">ABOUT US</a></li>
                 <li>
@@ -41,9 +41,9 @@
     </nav>
     <div class='upperHolder'>
         <div class="card">
-            <img src="../../images/buy/house1.jpg" alt="House image" class="cardImage" width="550px" height="400px">
-            <button class="changePic" value="outside">Outside View</button>
-            <button class="changePic" value="interior" onclick="changeImage()">Interior View</button>
+            <img id="houseImage" src="../../images/buy/house1.jpg" alt="House image" class="cardImage" width="550px" height="400px">
+            <button class="changePic" value="outside" onclick="exteriorImage()">Outside View</button>
+            <button class="changePic" value="interior" onclick="interiorImage()">Interior View</button>
         </div>
         <div class="descriptionHolder">
             <p class="descriptionWords">Owner: Mugisha Precieux</p>

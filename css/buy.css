@@ -63,7 +63,11 @@ i {
         display: inline-table;
     }
 }
-
+a{
+    color: #3d5af1;
+    font-family: var(--font-family);
+    font-size: large;
+}
 .links {
 
     text-decoration: none;
@@ -172,7 +176,7 @@ li {
 }
 
 .houseButtons:hover {
-    background-color: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+    /* background-color: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100)); */
     color: var(--secondary-color);
     font-weight: bolder;
     height: 45px;
@@ -388,19 +392,19 @@ transition-duration: 0.6s;
         transform: scale(0.8);
     }
 
-    /* 
+    
 .cards:hover {
     /* added the scale element */
-    /* border-radius: 10px;
-    transform: scale(1.01); */
-    /* width: 410px;
-    height: 490px; */
-    /* transition: 0.1s ease-in-out; */
-    /* background-color: var(--primarycolor);
+    border-radius: 10px; 
+    transform: scale(1.01); 
+    width: 410px; 
+    height: 490px; 
+    transition: 0.1s ease-in-out;
+    background-color: var(--primarycolor); 
     color: var(--secondary-color);
-    padding: 20px; */
-    /* box-shadow: 0px 1px 2px 2px var(--primarycolor); */
-
+    padding: 20px; 
+     box-shadow: 0px 1px 2px 2px var(--primarycolor); 
+z-index: -20;
 }
 
  .cards:hover img {

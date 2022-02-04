@@ -24,3 +24,11 @@ function showMap(){
    let map = document.getElementById('map')
 map.style.display='flex'
 }
+function interiorImage(){
+    let image = document.getElementById('houseImage')
+    image.setAttribute('src','../../images/interior/house1a.jpg')
+}
+function exteriorImage(){
+    let image = document.getElementById('houseImage')
+    image.setAttribute('src',"../../images/buy/house1.jpg")
+}

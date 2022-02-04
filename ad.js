@@ -12,3 +12,6 @@ for(i = 0 ; i < greeting.length ; i++){
 setTimeout(()=>{holder.push(greeting[i])}, 400)
 }
 document.querySelector('#para').innerHTML = holder
+function changeImage(){
+  let 
+}
