@@ -19,11 +19,14 @@ function displayTime() {
     document.getElementById('time').innerHTML = date.toLocaleTimeString();
     setTimeout(function () { displayTime() }, 1000)
 }
-
-function showMap(){
-   let map = document.getElementById('map')
-map.style.display='flex'
+function advertisement1(){
+    let ad1 = document.querySelector('.fullad')
+    ad1.style.display = "flex"
 }
+window.setTimeout(advertisement1, 1000)
+function closeAd(
+    
+)
 function interiorImage(){
     let image = document.getElementById('houseImage')
     image.setAttribute('src','../../images/interior/house1a.jpg')
